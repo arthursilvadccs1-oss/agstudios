@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <title>Solicite um orçamento — AG Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="orcamento.css" />
+</head>
+<body>
+  <header><a href="index.html" class="brand"><img src="assets/ag-studios-logo.png" alt="AG Studios"></a><a class="back" href="index.html">← Voltar ao site</a></header>
+  <main>
+    <section class="intro"><p>AG STUDIOS / ORÇAMENTO</p><h1>Vamos contar a sua <em>história?</em></h1><span>Preencha o formulário e envie sua solicitação direto pelo WhatsApp.</span></section>
+    <form id="budget-form">
+      <div class="field"><label for="name">Seu nome</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required></div>
+      <div class="field"><label for="date">Data do evento ou ensaio</label><input id="date" name="date" type="date" required></div>
+      <div class="field"><label for="service">Serviço desejado</label><select id="service" name="service" required><option value="" selected disabled>Selecione uma opção</option><option>Fotografia</option><option>Produção de vídeo</option><option>Storymaker</option><option>Imagens com drone</option><option>Igrejas e comunidades</option><option>Mais de um serviço</option></select></div>
+      <div class="field"><label for="type">Tipo de evento ou projeto</label><input id="type" name="type" type="text" placeholder="Ex.: aniversário, casamento, culto..." required></div>
+      <div class="field full"><label for="location">Local do evento</label><input id="location" name="location" type="text" placeholder="Cidade, espaço ou endereço" required></div>
+      <div class="field full"><label for="message">Conte um pouco mais <small>(opcional)</small></label><textarea id="message" name="message" rows="4" placeholder="Quantidade de pessoas, referências ou qualquer detalhe importante."></textarea></div>
+      <button type="submit">Enviar pedido no WhatsApp <span>→</span></button>
+      <p class="note">Ao enviar, você será direcionado para o WhatsApp da AG Studios com seus dados preenchidos.</p>
+    </form>
+  </main>
+  <script src="orcamento.js"></script>
+</body>
+</html>

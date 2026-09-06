@@ -1,0 +1,3 @@
+/* Mantem a proporcao original do audiovisual, sem recortar a imagem. */
+.audiovisual{background:#111}
+.audiovisual video{object-fit:contain!important;background:#111}
