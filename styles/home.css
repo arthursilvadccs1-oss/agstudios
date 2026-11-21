@@ -1,0 +1,19 @@
+/*
+ * Página inicial
+ * A ordem dos imports é intencional: base → seções → componentes → responsivo.
+ */
+@import url("./base.css");
+
+@import url("./home-sections.css");
+
+@import url("./components/video.css");
+
+@import url("./components/cta.css");
+
+@import url("./components/faq.css");
+
+@import url("./components/services.css");
+
+@import url("./components/conversion.css");
+
+@import url("./responsive.css");

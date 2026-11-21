@@ -7,10 +7,13 @@ form?.addEventListener('submit', event => {
     'Olá, AG Studios! Gostaria de solicitar um orçamento.',
     '',
     `Nome: ${data.get('name')}`,
-    `Data: ${date}`,
-    `Serviço: ${data.get('service')}`,
+    `WhatsApp: ${data.get('phone')}`,
     `Evento/projeto: ${data.get('type')}`,
-    `Local: ${data.get('location')}`,
+    `Data: ${date}`,
+    `Duração: ${data.get('duration')}`,
+    `Serviço: ${data.get('service')}`,
+    `Cidade: ${data.get('city')}`,
+    data.get('location') ? `Local: ${data.get('location')}` : '',
     data.get('message') ? `Detalhes: ${data.get('message')}` : ''
   ].filter(Boolean).join('\n');
   window.open(`https://wa.me/5561999092639?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
